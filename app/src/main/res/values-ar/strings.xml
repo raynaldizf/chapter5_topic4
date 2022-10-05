@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">chapter5_topic4</string>
+    <string name="masuk">يدخل</string>
+    <string name="masukkan_email">أدخل البريد الإلكتروني</string>
+    <string name="masukkan_password">أدخل كلمة المرور</string>
+    <string name="arabic">Arabic</string>
+    <string name="us">US</string>
+</resources>

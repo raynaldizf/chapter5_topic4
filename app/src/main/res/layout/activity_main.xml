@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headerLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/masuk"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_below="@id/headerLogin"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/container1"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:padding="10dp"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/masukkan_email"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:background="@drawable/custom_input"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/etEmail"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/masukkan_password"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:background="@drawable/custom_input"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnLogin"
+            android:layout_below="@id/etPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/masuk"
+
+            />
+    </RelativeLayout>
+
+    <Switch
+        android:id="@+id/btnSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container1"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/container1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnArab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arabic"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            />
+
+        <Button
+            android:id="@+id/btnUS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/us"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
